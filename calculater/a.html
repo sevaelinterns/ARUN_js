@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style  type="text/css">
+            label{
+                display: block;
+            }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label> Enter first number:</label>
+        <input type="number" id="n1"  onkeypress="return myFunction(event)"/>
+        <label> Enter second number:</label>
+        <input type="number" id="n2"   onkeypress="return myFunction(event)"/><br><br>
+        <select  onchange="calculate(this.value)">
+            <option disabled="disabled" selected="selected">Select Operator</option>
+            <option value="+">+ add</option>
+            <option value="-">- sub</option>
+            <option value="*">* mul</option>
+            <option value="/">/ div</option>
+        </select><br><br> 
+        <label> Result:</label>
+        calculate:<span id="print1"></span>&nbsp;<span id="print2"></span>&nbsp;<span id="print3"></span><br>
+        <input type="text" id="result" readonly /><br>
+        <script src="./index.js"></script>
+</body>
+</html>
